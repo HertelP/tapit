@@ -16,7 +16,7 @@ pub fn init() -> termion::raw::RawTerminal<std::io::Stdout> {
 
     write!(
         stdout,
-        "   {}1{} ",
+        "-  {}1{} ",
         color::Fg(color::LightWhite),
         color::Fg(color::Reset)
     )
@@ -61,7 +61,7 @@ fn main() {
                     write!(stdout, "\r\n").unwrap();
                     write!(
                         stdout,
-                        "   {}{}{} ",
+                        "-  {}{}{} ",
                         color::Fg(color::LightWhite),
                         current_line + 1,
                         color::Fg(color::Reset)
